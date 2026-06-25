@@ -44,6 +44,7 @@ public class ChatController {
     @GetMapping("/generateStream")
     public Flux<ChatResponse> generateStream(@RequestParam(value = "message", defaultValue = "Tell me a joke") String message) {
         var prompt = new Prompt(new UserMessage(message));
+        System.out.println("Prompt: " + prompt);
         return this.chatModel.stream(prompt);
     }
 

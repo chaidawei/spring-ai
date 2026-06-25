@@ -46,7 +46,6 @@ public class ChatController {
         var prompt = new Prompt(new UserMessage(message));
         System.out.println("Prompt: " + prompt);
         System.out.println("你好");
-        System.out.println("你不好");
         return this.chatModel.stream(prompt);
     }
 

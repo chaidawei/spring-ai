@@ -47,6 +47,8 @@ public class ChatController {
         System.out.println("Prompt: " + prompt);
         System.out.println("你好");
         System.out.println("早上吃了吗");
+        System.out.println("今天是2026.07.20");
+        System.out.println("放假了");
         return this.chatModel.stream(prompt);
     }
 

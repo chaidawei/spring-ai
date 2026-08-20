@@ -30,18 +30,3 @@ spring:
       embedding:
         options:
           model: embedding-3
-    vectorstore:
-      milvus:
-        client:
-          host: 172.22.98.200
-          port: 19530
-        collection-name: book
-        database-name: default
-        embedding-dimension: 2048
-        index-type: IVF_FLAT
-        metric-type: COSINE
-        # ===== 自定义业务配置 =====
-        # 每次最多同步多少本书（0=不限制），控制 Embedding API 用量
-        max-books-per-sync: 50
-        # 是否启用去重（跳过已在Milvus中的图书），避免重复向量化
-        enable-dedup: true

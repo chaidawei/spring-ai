@@ -79,11 +79,6 @@
 			<artifactId>hutool-all</artifactId>
 			<version>5.8.35</version>
 		</dependency>
-		<!-- Milvus 向量数据库 (含自动配置) -->
-		<dependency>
-			<groupId>org.springframework.ai</groupId>
-			<artifactId>spring-ai-starter-vector-store-milvus</artifactId>
-		</dependency>
 
 		<!-- MySQL + JPA (从本地数据库读取图书数据) -->
 		<dependency>
